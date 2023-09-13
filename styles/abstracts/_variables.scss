@@ -32,6 +32,8 @@ $colors: ("blue": #292562,
 	"tart": #FF4848,
 	"green": #019267,
 	"grey": #454847,
+	"red-hover": "#8D3434",
+	"cream": "#FFDAC5",
 );
 
 $blue: map.get($colors, "blue");
@@ -44,3 +46,5 @@ $black-50: map.get($colors, "black-50");
 $tart: map.get($colors, "tart");
 $green: map.get($colors, "green");
 $grey: map.get($colors, "grey");
+$red-hover: map.get($colors, "red-hover");
+$cream: map.get($colors, "cream");

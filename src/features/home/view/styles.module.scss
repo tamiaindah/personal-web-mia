@@ -5,9 +5,51 @@
 .wrapper {
     background-color: v.$black-100;
 
+    /* Navbar */
+    nav.navbar {
+        background-color: v.$black-100;
+        z-index: 99;
+        display: block;
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -o-sticky;
+        position: -ms-sticky;
+        position: sticky;
+        top: 0;
+
+        .navbarSection {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            justify-content: space-between;
+            height: 70px;
+            align-items: center;
+            width: 100%;
+
+
+
+            .links {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    @include t.body-2;
+                    color: v.$white;
+
+                    &:hover {
+                        color: v.$tart
+                    }
+                }
+            }
+        }
+    }
+
     & .container {
         padding: 20px 0;
-        max-width: 1028px;
+        max-width: 1328px;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -29,62 +71,42 @@
             position: relative;
             flex-direction: column;
 
-            .container {
-                align-items: flex-start;
-                flex-direction: column;
-                gap: 20px;
-
-                .bannerTitle {
-                    width: 100%;
-
-                    h1 {
-                        @include t.heading-1;
-                        color: v.$white;
-                    }
-
-
-                }
-
-                span {
-                    @include t.body-1;
-                    color: v.$white;
-                }
-            }
-        }
-
-        /* Navbar */
-        nav.navbar {
-            background-color: v.$black-100;
-
-            .navbarSection {
-                display: flex;
-                flex-direction: row;
-                position: relative;
-                justify-content: space-between;
-                height: 70px;
-                align-items: center;
+            .bannerTitle {
                 width: 100%;
 
-
-
-                .links {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 20px;
-
-                    a {
-                        text-decoration: none;
-                        font-weight: 500;
-                        @include t.body-2;
-                        color: v.$white;
-
-                        &:hover {
-                            color: v.$tart
-                        }
-                    }
+                h1 {
+                    @include t.heading-1;
+                    font-weight: 700;
+                    color: v.$white;
+                    margin: 0;
                 }
+
+
             }
+
+            span {
+
+                margin-top: 53px;
+                @include t.body-1;
+                color: v.$white;
+                font-weight: 500;
+            }
+
+            button {
+                margin-top: 53px;
+                width: fit-content;
+            }
+
+            // .container {
+            //     align-items: flex-start;
+            //     flex-direction: column;
+            //     gap: 20px;
+
+
+            // }
         }
+
+
 
 
 
@@ -111,15 +133,18 @@
                     gap: 20px;
 
                     li {
-                        font-family: v.$poppins;
-                        font-size: 56px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: normal;
-                        letter-spacing: 0.56px;
+
                         display: flex;
                         gap: 20px;
-                        color: v.$white;
+                        @include t.heading-1;
+
+
+                        a {
+                            @include t.heading-1;
+                            font-weight: 500;
+                            color: v.$white;
+                            text-decoration: none;
+                        }
                     }
 
                     li::before {

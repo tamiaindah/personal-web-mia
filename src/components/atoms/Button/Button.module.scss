@@ -1,0 +1,51 @@
+@use "styles/abstracts/variables"as v;
+@use "styles/abstracts/typo-mixins"as t;
+
+._button {
+	display: flex;
+	gap: 10px;
+	cursor: pointer;
+	border-radius: 8px;
+	padding: 10px 24px;
+	outline: none;
+	border: none;
+	justify-content: center;
+	align-items: center;
+	@include t.button-2;
+	font-weight: 500;
+
+	&._FullWidth {
+		width: 100%;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.8;
+	}
+}
+
+// For size props
+._small {
+	padding: 8px 16px;
+}
+
+._regular {
+	padding: 12px 20px;
+}
+
+._large {
+	padding: 14px 28px;
+}
+
+// For variant props
+._fill {
+	background-color: v.$tart;
+	color: v.$white;
+	transition: 0.5s;
+
+	&:hover {
+		// outline: 1px solid black;
+		color: v.$black-80;
+		background-color: #FFDAC5;
+	}
+}

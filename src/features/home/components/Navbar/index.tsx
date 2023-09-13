@@ -1,14 +1,19 @@
+import { socialMediaLinks } from "@utils/socialMediaLinks";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import s from "../../view/styles.module.scss";
 
 
-const handleClick = () => {
-  console.log("hello, mia");
-};
+// const handleClick = () => {
+//   console.log("hello, mia");
+// };
 
 const Navbar = () => {
+  const github = "https://github.com/tamiaindah";
+  const dribbble ="https://dribbble.com/poppinshine";
+  const linkedin = "https://www.linkedin.com/tamiaindah";
+
   return (
     <nav className={s.navbar}>
       <div className={s.container}>
@@ -26,9 +31,9 @@ const Navbar = () => {
             </Link>
           </div>
           <div className={s.links}>
-            <Link href="mailto: tamiaindah6600@gmail.com">github</Link>
-            <Link href="/">dribbble</Link>
-            <Link href="/create">linkedin</Link>
+            <Link href={socialMediaLinks.github} target="_blank" title="Github">github</Link>
+            <Link href={socialMediaLinks.dribbble} target="_blank" title="Dribbble">dribbble</Link>
+            <Link href={socialMediaLinks.linkedin} target="_blank" title="Linkedin">linkedin</Link>
           </div>
           <div className={s.logo}>
             <Link href="/">

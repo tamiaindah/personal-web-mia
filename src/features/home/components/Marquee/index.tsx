@@ -1,3 +1,5 @@
+import { socialMediaLinks } from "@utils/socialMediaLinks";
+import Link from "next/link";
 import React from "react";
 import s from "../../view/styles.module.scss";
 
@@ -8,9 +10,16 @@ const EmailSection = () => {
         <div className={s.container}>
           <marquee className={s.email}>
             <ul>
-              <li>{email}</li>
-              <li>{email}</li>
-              <li>{email}</li>
+              <li>
+                <Link href={socialMediaLinks.email} target="_blank" title="Email">{email}</Link>
+              </li>
+              <li>
+                <Link href={socialMediaLinks.email} target="_blank" title="Email">{email}</Link>
+              </li>
+              <li>
+                <Link href={socialMediaLinks.email} target="_blank" title="Email">{email}</Link>
+              </li>
+              
             </ul>
           </marquee>
         </div>

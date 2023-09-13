@@ -7,8 +7,9 @@ import s from "./styles.module.scss";
 const Home = () => {
 	return (
 		<div className={s.wrapper}>
+			<Navbar />
 			<div className={s.container}>
-				<Navbar />
+				
 				<HeroBanner />
 				
 			</div>
