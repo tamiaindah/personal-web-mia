@@ -1,0 +1,54 @@
+@use "styles/abstracts/variables"as v;
+@use "styles/abstracts/typo-mixins"as t;
+
+.wrapper {
+    background-color: #171010;
+
+    & .container {
+        padding: 20px 0;
+        max-width: 1028px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #171010;
+
+
+        & .counterContainer {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .banner {
+            background-color: #171010;
+            height: 770px;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+
+            .container {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 20px;
+
+                .bannerTitle {
+                    width: 100%;
+
+                    h1 {
+                        @include t.heading-1;
+                        color: v.$white;
+                    }
+
+
+                }
+
+                span {
+                    @include t.body-1;
+                    color: v.$white;
+                }
+            }
+        }
+    }
+}

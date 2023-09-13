@@ -1,0 +1,159 @@
+@use "variables"as v;
+
+@mixin display-1 {
+	// paste here
+}
+
+@mixin display-1 {
+	// paste here
+}
+
+@mixin heading-1 {
+	font-family: v.$poppins;
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 0.56px;
+
+	@media (max-width: v.$mobile-down) {
+		font-size: 48px;
+	}
+}
+
+@mixin heading-2 {
+	font-family: v.$poppins;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 0.48px;
+
+	@media (max-width: v.$mobile-down) {
+		font-size: 40px;
+	}
+}
+
+@mixin heading-3 {
+	font-family: v.$poppins;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+
+	@media (max-width: v.$mobile-down) {
+		font-size: 32px;
+	}
+}
+
+@mixin heading-4 {
+	font-family: v.$poppins;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+
+	@media (max-width: v.$mobile-down) {
+		font-size: 24px;
+	}
+}
+
+@mixin heading-5 {
+	font-family: v.$poppins;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+
+	@media (max-width: v.$mobile-down) {
+		font-size: 20px;
+	}
+}
+
+@mixin heading-6 {
+	// paste here
+}
+
+@mixin subheading-1 {
+	font-family: v.$poppins;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 35px;
+}
+
+@mixin subheading-2 {
+	font-family: v.$poppins;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+@mixin subheading-3 {
+	// paste here
+}
+
+@mixin button-1 {
+	font-family: v.$poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0.8px;
+	text-transform: capitalize;
+}
+
+@mixin button-2 {
+	font-family: v.$poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 3.2px;
+	text-transform: uppercase;
+}
+
+@mixin button-3 {
+	// paste here
+}
+
+@mixin caption {
+	font-family: v.$poppins;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 15px;
+}
+
+@mixin body-1 {
+	font-family: v.$poppins;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+@mixin body-2 {
+	font-family: v.$poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+@mixin body-3 {
+	font-family: v.$poppins;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+@mixin small-1 {
+	// paste here
+}
+
+@mixin small-2 {
+	// paste here
+}
