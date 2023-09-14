@@ -10,9 +10,6 @@ import s from "../../view/styles.module.scss";
 // };
 
 const Navbar = () => {
-  const github = "https://github.com/tamiaindah";
-  const dribbble ="https://dribbble.com/poppinshine";
-  const linkedin = "https://www.linkedin.com/tamiaindah";
 
   return (
     <nav className={s.navbar}>

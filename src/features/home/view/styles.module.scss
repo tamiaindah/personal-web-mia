@@ -47,13 +47,38 @@
         }
     }
 
+    .portfolioSection {
+        background-color: v.$broken-white;
+        display: flex;
+        flex-direction: row;
+        margin-block: 96px;
+
+        .container {
+            gap: 0;
+        }
+
+        span {
+            @include t.caption;
+        }
+
+        h3 {
+            @include t.heading-3;
+        }
+
+        .WrapperList {
+            margin-top: 32px;
+
+        }
+    }
+
     & .container {
         padding: 20px 0;
-        max-width: 1328px;
+        max-width: 1700px;
         margin: auto;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        width: 100%;
         background-color: v.$broken-white;
 
 

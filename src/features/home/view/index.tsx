@@ -2,6 +2,7 @@ import React from "react";
 import HeroBanner from "../components/HeroBanner";
 import EmailSection from "../components/Marquee";
 import Navbar from "../components/Navbar";
+import PortfolioSection from "../components/PortfolioSection";
 import s from "./styles.module.scss";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
 			</div>
 
 			<EmailSection />
+			<PortfolioSection />
 		</div>
 	);
 };

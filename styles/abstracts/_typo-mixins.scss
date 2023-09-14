@@ -80,7 +80,6 @@
 	font-family: v.$poppins;
 	font-size: 32px;
 	font-style: normal;
-
 	line-height: 35px;
 }
 
@@ -88,12 +87,14 @@
 	font-family: v.$poppins;
 	font-size: 28px;
 	font-style: normal;
-
-	line-height: 30px;
+	line-height: 38px;
 }
 
 @mixin subheading-3 {
-	// paste here
+	font-family: v.$poppins;
+	font-size: 20px;
+	font-style: normal;
+	line-height: 30px;
 }
 
 @mixin button-1 {

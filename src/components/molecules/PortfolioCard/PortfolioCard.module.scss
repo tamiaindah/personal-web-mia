@@ -1,0 +1,27 @@
+@use "styles/abstracts/variables"as v;
+@use "styles/abstracts/typo-mixins"as t;
+
+.cardLink {
+    cursor: pointer;
+
+    div {
+        height: auto;
+
+        img {
+            object-fit: cover;
+            width: 100%
+        }
+    }
+
+    ._portfolioDetails {
+        h3 {
+            @include t.subheading-3;
+            color: v.$black-100;
+        }
+
+        p {
+            @include t.caption;
+            color: v.$black-100;
+        }
+    }
+}
