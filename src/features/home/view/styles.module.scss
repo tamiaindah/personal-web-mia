@@ -3,11 +3,11 @@
 
 
 .wrapper {
-    background-color: v.$black-100;
+    background-color: v.$broken-white;
 
     /* Navbar */
     nav.navbar {
-        background-color: v.$black-100;
+        background-color: v.$broken-white;
         z-index: 99;
         display: block;
         position: -webkit-sticky;
@@ -37,7 +37,7 @@
                     text-decoration: none;
                     font-weight: 500;
                     @include t.body-2;
-                    color: v.$white;
+                    color: v.$black-100;
 
                     &:hover {
                         color: v.$tart
@@ -54,7 +54,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        background-color: v.$black-100;
+        background-color: v.$broken-white;
 
 
         & .counterContainer {
@@ -64,32 +64,35 @@
         }
 
         .banner {
-            background-color: v.$black-100;
+            background-color: v.$broken-white;
             height: 770px;
             justify-content: center;
             display: flex;
             position: relative;
+            align-items: center;
             flex-direction: column;
 
             .bannerTitle {
                 width: 100%;
 
                 h1 {
-                    @include t.heading-1;
+                    @include t.display-1;
                     font-weight: 700;
-                    color: v.$white;
+                    color: v.$black-100;
                     margin: 0;
+                    text-align: center;
                 }
 
 
             }
 
             span {
-
-                margin-top: 53px;
-                @include t.body-1;
-                color: v.$white;
+                margin-top: 32px;
+                text-align: center;
+                @include t.body-2;
+                color: v.$black-100;
                 font-weight: 500;
+                width: 350px;
             }
 
             button {
@@ -114,7 +117,7 @@
 
     // Email Marquee
     .marqueeEmail {
-        background-color: v.$black-100;
+        background-color: v.$broken-white;
         height: 100px;
         justify-content: center;
         display: flex;
@@ -142,7 +145,7 @@
                         a {
                             @include t.heading-1;
                             font-weight: 500;
-                            color: v.$white;
+                            color: v.$black-100;
                             text-decoration: none;
                         }
                     }

@@ -21,9 +21,9 @@ const Navbar = () => {
           <div className={s.burger}>
           <Link href="/">
             <Image
-							width={24}
-							height={39}
-							src="/images/icons/bar.svg"
+							width={42}
+							height={42}
+							src="/images/icons/bar-dark.svg"
 							alt="Navbar-icon"
 							priority
 							loading="eager"
@@ -39,8 +39,8 @@ const Navbar = () => {
             <Link href="/">
             <Image
 							width={81}
-							height={20}
-							src="/images/logos/logo.svg"
+							height={42}
+							src="/images/logos/logo-dark.svg"
 							alt="Mia-logo"
 							title="Personal Website Mia"
 							priority

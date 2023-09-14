@@ -3,6 +3,8 @@ import type { AppProps } from "next/app";
 import { Provider } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "../styles/globals.scss";
+import MainLayout from "@templates/MainLayout";
 
 const App = ({ Component, pageProps }: AppProps) => {
 	return (

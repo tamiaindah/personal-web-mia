@@ -1,10 +1,13 @@
 @use "variables"as v;
 
 @mixin display-1 {
-	// paste here
+	font-size: clamp(42px, -6.5915492958px + 8.7183098592vw, 180px);
+	font-style: normal;
+	line-height: normal;
+	font-family: "Poppins";
 }
 
-@mixin display-1 {
+@mixin display-2 {
 	// paste here
 }
 

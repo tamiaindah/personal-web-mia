@@ -5,9 +5,9 @@ const HeroBanner = () => {
 	return (
 		<div className={s.banner}>
 			<div className={s.bannerTitle}>
-				<h1>Lorem ipsum dolor sit amet consectetur</h1>
+				<h1>LOREM IPSUM</h1>
 			</div>
-			<span className={s.bannerHi}>hi i’m Mia, nice to meet ya!</span>
+			<span className={s.bannerHi}>Lorem ipsum ndolor sit amet, consectetur adipiscing elit</span>
 
 			
 			<Button>ABOUT ME</Button>
