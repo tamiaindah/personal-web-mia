@@ -1,4 +1,5 @@
 import React from "react";
+import About from "../components/About";
 import HeroBanner from "../components/HeroBanner";
 import HighlightPortoSection from "../components/HighlightPortoSection";
 import EmailSection from "../components/Marquee";
@@ -15,6 +16,8 @@ const Home = () => {
 				<HeroBanner />
 				
 			</div>
+			
+			<About/>
 
 			<EmailSection />
 			<HighlightPortoSection />

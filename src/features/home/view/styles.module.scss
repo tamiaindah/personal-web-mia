@@ -47,6 +47,32 @@
         }
     }
 
+    // About Section
+    .AboutSection {
+        background-color: v.$broken-white;
+        display: flex;
+        position: relative;
+
+        .AboutWrapper {
+            width: 100%;
+            min-height: 700px;
+
+            .ImageWrapper {
+                display: flex;
+
+                img {
+                    width: 100%;
+                    height: 700px;
+                    object-fit: cover;
+                }
+            }
+
+            .summaryWrapper {
+                display: flex;
+            }
+        }
+    }
+
     // portfolio section
     .portfolioSection {
         background-color: v.$broken-white;
@@ -234,7 +260,13 @@
         background-color: v.$broken-white;
 
         .container {
+            span {
+                @include t.caption;
+            }
 
+            h3 {
+                @include t.heading-3;
+            }
 
             .wrapperHighlight {
                 background-color: #222;
@@ -242,6 +274,8 @@
                 border-radius: 1rem;
             }
         }
+
+
     }
 
 

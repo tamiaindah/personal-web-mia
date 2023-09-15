@@ -7,6 +7,8 @@ const HighlightPortoSection = () => {
     return ( 
         <div className={s.highlightPorto}>
             <div className={s.container}>
+            <span>Lorem Ipsum</span>
+            <h3>Lorem ipsum dolor sit amet</h3>
             <div className={s.wrapperHighlight}>
             <PortfolioCard></PortfolioCard>
             </div>
