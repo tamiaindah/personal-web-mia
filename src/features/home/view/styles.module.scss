@@ -141,11 +141,11 @@
 
                         @media (max-width: v.$tablet-down) {
                             bottom: 57%;
-                            transform: rotate(-15deg) translateX(30%) translateY(75%);
+                            transform: rotate(-10deg) translateX(30%) translateY(75%);
                         }
 
                         @media (max-width: v.$mobile-up) {
-                            transform: rotate(-15deg) translateX(50%) translateY(75%);
+                            transform: rotate(-10deg) translateX(50%) translateY(75%);
                         }
                     }
                 }
@@ -234,11 +234,13 @@
         background-color: v.$broken-white;
 
         .container {
-            background-color: #222;
-            padding: 60px;
-            border-radius: 1rem;
 
 
+            .wrapperHighlight {
+                background-color: #222;
+                padding: 60px;
+                border-radius: 1rem;
+            }
         }
     }
 

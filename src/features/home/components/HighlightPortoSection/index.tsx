@@ -7,7 +7,9 @@ const HighlightPortoSection = () => {
     return ( 
         <div className={s.highlightPorto}>
             <div className={s.container}>
+            <div className={s.wrapperHighlight}>
             <PortfolioCard></PortfolioCard>
+            </div>
             </div>
         </div>
      );
