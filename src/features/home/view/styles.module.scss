@@ -47,11 +47,13 @@
         }
     }
 
+    // portfolio section
     .portfolioSection {
         background-color: v.$broken-white;
         display: flex;
         flex-direction: row;
-        margin-block: 96px;
+        padding-block: 96px;
+
 
         .container {
             gap: 0;
@@ -65,9 +67,19 @@
             @include t.heading-3;
         }
 
-        .WrapperList {
+        .PortfolioList {
             margin-top: 32px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
 
+            @media (max-width: v.$tablet-down) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: v.$mobile-up) {
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
     }
 
@@ -81,6 +93,10 @@
         width: 100%;
         background-color: v.$broken-white;
 
+        @media (max-width: v.$laptop-down) {
+            padding: 10px;
+        }
+
 
         & .counterContainer {
             display: flex;
@@ -88,6 +104,7 @@
             gap: 20px;
         }
 
+        // banner
         .banner {
             background-color: v.$broken-white;
             height: 770px;
@@ -102,11 +119,38 @@
 
                 h1 {
                     @include t.display-1;
-                    font-weight: 700;
+                    font-weight: 600;
                     color: v.$black-100;
                     margin: 0;
                     text-align: center;
+
+                    span {
+                        @include t.body-2;
+                        font-weight: 500;
+                        padding: 12px 24px;
+                        color: v.$broken-white;
+                        letter-spacing: 2px;
+                        border-radius: 12px;
+                        background-color: v.$red-10;
+                        position: absolute;
+                        pointer-events: none;
+                        width: fit-content;
+                        bottom: 52%;
+                        right: 20%;
+                        transform: rotate(-15deg) translateX(75%) translateY(30%);
+
+                        @media (max-width: v.$tablet-down) {
+                            bottom: 57%;
+                            transform: rotate(-15deg) translateX(30%) translateY(75%);
+                        }
+
+                        @media (max-width: v.$mobile-up) {
+                            transform: rotate(-15deg) translateX(50%) translateY(75%);
+                        }
+                    }
                 }
+
+
 
 
             }
@@ -183,6 +227,22 @@
             }
         }
     }
+
+    //Portfolio Highlight
+    .highlightPorto {
+        padding-top: 96px;
+        background-color: v.$broken-white;
+
+        .container {
+            background-color: #222;
+            padding: 60px;
+            border-radius: 1rem;
+
+
+        }
+    }
+
+
 
 
 }

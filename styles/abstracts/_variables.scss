@@ -34,9 +34,10 @@ $colors: ("blue": #292562,
 	"tart": #FF4848,
 	"green": #019267,
 	"grey": #454847,
-	"red-hover": "#8D3434",
-	"cream": "#FFDAC5",
-	"broken-white": "#E9E9E9",
+	"red-10" : #8D3434,
+	"cream" : #FFDAC5,
+	"broken-white": #E9E9E9,
+	"soft-pink": #e6d9d8,
 );
 
 $blue: map.get($colors, "blue");
@@ -52,3 +53,5 @@ $grey: map.get($colors, "grey");
 $red-hover: map.get($colors, "red-hover");
 $cream: map.get($colors, "cream");
 $broken-white: map.get($colors, "broken-white");
+$soft-pink: map.get($colors, "soft-pink");
+$red-10: map.get($colors, "red-10");

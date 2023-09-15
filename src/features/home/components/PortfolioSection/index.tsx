@@ -7,8 +7,10 @@ const PortfolioSection = () => {
 		<div className={s.portfolioSection}>
             <div className={s.container}>
             <span>Current Portfolios</span>
-            <h3>Best of the best of my portfolios</h3>
-			<div className={s.WrapperList}>
+            <h3>Lorem ipsum dolor sit amet</h3>
+			<div className={s.PortfolioList}>
+                <PortfolioCard></PortfolioCard>
+                <PortfolioCard></PortfolioCard>
                 <PortfolioCard></PortfolioCard>
             </div>
             </div>
