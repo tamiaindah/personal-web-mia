@@ -6,6 +6,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
 
     .undefined.cardContainer {
         display: flex;
@@ -18,21 +21,45 @@
 
         img {
             object-fit: cover;
-            width: 100%
+            width: 100%;
+            border-radius: 4px;
         }
     }
 
 
 
     ._portfolioDetails {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 24px;
+
         h3 {
             @include t.subheading-3;
-            color: v.$black-100;
+            color: v.$white;
+            margin-bottom: 4px;
         }
 
         p {
             @include t.caption;
-            color: v.$black-100;
+            color: v.$white;
+            // font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .toolsWrapper {
+            margin-top: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+
+            span {
+                @include t.caption;
+                color: v.$white;
+            }
         }
     }
 }
