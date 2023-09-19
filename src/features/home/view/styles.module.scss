@@ -57,6 +57,10 @@
             width: 100%;
             min-height: 700px;
 
+            @media (max-width: v.$mobile-up) {
+                min-height: auto;
+            }
+
             .ImageWrapper {
                 display: flex;
 
@@ -139,6 +143,10 @@
             position: relative;
             align-items: center;
             flex-direction: column;
+
+            @media (max-width: v.$mobile-up) {
+                height: 500px;
+            }
 
             .bannerTitle {
                 width: 100%;
