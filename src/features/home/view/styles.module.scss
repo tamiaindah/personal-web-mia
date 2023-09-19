@@ -84,6 +84,9 @@
                 background-color: v.$black-50;
                 padding-left: 100px;
                 padding-right: 100px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
                 @media (max-width: v.$tablet-down) {
                     padding-block: 50px;
@@ -95,6 +98,14 @@
                     @include t.heading-3;
                     color: v.$broken-white;
                     text-align: center;
+                }
+
+                button {
+                    margin-top: 32px;
+                    width: fit-content;
+                    background-color: v.$black-100;
+
+
                 }
             }
         }
@@ -146,7 +157,7 @@
         margin: auto;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+
         width: 100%;
         background-color: v.$broken-white;
 
@@ -297,29 +308,67 @@
 
     //Portfolio Highlight
     .highlightPorto {
-        padding-top: 96px;
-        background-color: v.$broken-white;
+        padding-block: 96px;
+        background-color: v.$black-100;
 
         @media (max-width: v.$tablet-down) {
-            padding-top: 50px;
+            padding-block: 50px;
         }
 
         .container {
-            span {
-                @include t.caption;
-            }
-
-            h3 {
-                @include t.heading-3;
-            }
+            background-color: v.$black-100;
 
             .wrapperHighlight {
-                background-color: #222;
-                padding: 60px;
-                border-radius: 1rem;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                gap: 20px;
 
-                @media (max-width: v.$mobile-up) {
-                    padding: 0;
+                @media (max-width: v.$tablet-down) {
+                    flex-direction: column;
+                }
+
+                .HighlightTitle {
+                    display: flex;
+                    position: relative;
+                    width: 40%;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: center;
+
+                    @media (max-width: v.$tablet-down) {
+                        width: 100%;
+                    }
+
+                    span {
+                        @include t.caption;
+                        color: v.$broken-white;
+                        margin-bottom: 8px;
+                    }
+
+                    h3 {
+                        @include t.heading-3;
+                        color: v.$broken-white;
+                        margin-bottom: 24px;
+                    }
+
+                    p {
+                        padding-right: 70px;
+                        @include t.caption;
+                        color: v.$broken-white;
+                        letter-spacing: 0.5px;
+                        text-wrap: wrap;
+                        display: flex;
+                    }
+                }
+
+                .HighlightColumn {
+                    display: flex;
+                    width: 60%;
+
+                    @media (max-width: v.$tablet-down) {
+                        width: 100%;
+                    }
                 }
             }
         }

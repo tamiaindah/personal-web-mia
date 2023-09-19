@@ -24,7 +24,7 @@ const PortfolioCard = ({
 			<CardBase className={className}>
 				<div className={s._imageContainer}>
 					<Image
-						width={300}
+						width={1000}
 						height={250}
 						src="/images/projects/chezjem/card-thumbnail.png"
 						alt="card-thumbnail"
