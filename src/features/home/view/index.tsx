@@ -1,4 +1,3 @@
-import React from "react";
 import About from "../components/About";
 import HeroBanner from "../components/HeroBanner";
 import HighlightPortoSection from "../components/HighlightPortoSection";
@@ -11,15 +10,13 @@ const Home = () => {
 	return (
 		<div className={s.wrapper}>
 			<Navbar />
-			<div className={s.container}>
-				
-				<HeroBanner />
-				
-			</div>
-			
-			<About/>
 
+			<div className={s.container}>
+				<HeroBanner />
+			</div>
 			<EmailSection />
+			<About />
+
 			<HighlightPortoSection />
 			<PortfolioSection />
 		</div>

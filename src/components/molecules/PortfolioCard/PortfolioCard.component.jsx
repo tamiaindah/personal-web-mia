@@ -16,11 +16,11 @@ const PortfolioCard = ({
 	const router = useRouter();
 	const handleClick = (e) => {
 		e.preventDefault();
-		router.push(`/car/${slug}`);
+		router.push(`/portfolio/${slug}`);
 	};
 
 	return (
-		<Link href={`/car/${slug}`} onClick={handleClick} className={s.cardLink}>
+		<Link href={`/portfolio/${slug}`} onClick={handleClick} className={s.cardLink}>
 			<CardBase className={className}>
 				<div className={s._imageContainer}>
 					<Image
