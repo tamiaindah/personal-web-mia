@@ -1,0 +1,43 @@
+@use "styles/abstracts/variables"as v;
+@use "styles/abstracts/typo-mixins"as t;
+
+header.navbar {
+    background-color: v.$broken-white;
+    z-index: 99;
+    display: block;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 0;
+
+    .navbarSection {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+        width: 100%;
+
+
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                @include t.body-2;
+                color: v.$black-100;
+
+                &:hover {
+                    color: v.$tart
+                }
+            }
+        }
+    }
+}

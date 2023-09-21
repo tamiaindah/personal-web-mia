@@ -3,15 +3,14 @@ const Footer = dynamic(() => import("@organisms/Footer"), {
 });
 import Header from "@organisms/Header";
 import dynamic from "next/dynamic";
+import { ReactNode } from "react";
 import s from "./MainLayout.module.scss";
 
-/**
- * @typedef {Object} args
- * @property {import("react").ReactNode} children
- * @param {args} param
- * @returns
- */
-const MainLayout = ({ children }) => {
+interface IMainLayoutProps {
+	children: ReactNode;
+}
+
+const MainLayout = ({ children }: IMainLayoutProps) => {
 	return (
 		<div className={s._Wrapper}>
 			<Header />

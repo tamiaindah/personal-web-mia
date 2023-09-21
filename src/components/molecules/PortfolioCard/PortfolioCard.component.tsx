@@ -2,19 +2,17 @@ import CardBase from "@atoms/CardBase";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { MouseEvent } from "react";
 import s from "./PortfolioCard.module.scss";
 
-/**
- * @param {import("./interface").ICarCardProps} param
- */
+interface IPortfolioCardProps {
+	className?: string;
+	slug: string;
+}
 
-const PortfolioCard = ({
-	className = "cardContainer",
-
-	slug,
-}) => {
+const PortfolioCard = ({ className = "cardContainer", slug }: IPortfolioCardProps) => {
 	const router = useRouter();
-	const handleClick = (e) => {
+	const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
 		router.push(`/portfolio/${slug}`);
 	};

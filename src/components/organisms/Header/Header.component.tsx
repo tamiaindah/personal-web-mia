@@ -1,15 +1,15 @@
 import { socialMediaLinks } from "@utils/socialMediaLinks";
 import Image from "next/image";
 import Link from "next/link";
-import s from "../../view/styles.module.scss";
+import s from "./Header.module.scss";
 
 // const handleClick = () => {
 //   console.log("hello, mia");
 // };
 
-const Navbar = () => {
+const Header = () => {
 	return (
-		<nav className={s.navbar}>
+		<header className={s.navbar}>
 			<div className={s.container}>
 				<div className={s.navbarSection}>
 					<div className={s.burger}>
@@ -51,8 +51,8 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-		</nav>
+		</header>
 	);
 };
 
-export default Navbar;
+export default Header;
